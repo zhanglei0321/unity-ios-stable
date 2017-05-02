@@ -38,7 +38,7 @@ namespace ElvaJSON {
                     builder.Append((bool) value ? "true" : "false");
                 } else if ((asList = value as IList) != null) {
                     SerializeArray(asList);
-                } else if ((asArray = value as Array) != null) {
+                } else if ((asList = value as Array) != null) {
                     SerializeArray(asList);
                 } else if ((asDict = value as IDictionary) != null) {
                     SerializeObject(asDict);
